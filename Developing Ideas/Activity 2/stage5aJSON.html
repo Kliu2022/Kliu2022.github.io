@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Stage 5a JSON Activity</title>
+
+	<style>
+
+		div {
+		    height: 50px; 
+		    width: 0px;
+		    border-radius: 10px;
+		    background-color:red;
+		}
+		h1 {
+		    margin: auto;
+		    line-height: 50px;
+		    display: table;
+		}
+		p {
+		    margin-left: 10px;
+		    font-size: 20px;
+		    vertical-align: middle;
+		    line-height: 50px;
+		}
+	
+
+	</style>
+</head>
+<body>
+
+<h1>HIV Infection Rates Compared Proportionally By Country<h1>
+<div id = "content">
+</div>
+
+
+<script>
+
+	iw = window.innerWidth - 100;
+
+	var myData = "";
+	var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Activity%202/data/data.json'; 
+
+	$.getJSON(staticUrl, function(data) {
+	    console.log(data)
+
+	    console.log(data.fact[1].dims.COUNTRY)
+	    console.log(data.fact[1].dims.GHO)
+	    console.log(data.fact[1].dims.YEAR)
+
+	    iw = window.innerWidth-80;
+
+
+	    countryData = data.fact[1].Value; //Get value from JSON A
+		loc = countryData.indexOf("["); //Locate the [ bracket B
+		val = countryData.substring(0,loc); // All values have [ C
+		val = val.replace(/ /g,""); //replace all " " with "" D
+		val = parseInt(val); //convert val1 to into int E
+		console.log(val);
+
+
+
+
+
+
+    });
+</script>
+
+
+
+
+</body>
+</html>

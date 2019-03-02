@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Vs ID</title>
+
+	<style>
+		div {
+			height: 100px;
+			width: 100px;
+			background-color: red;
+		}
+		#div1 {
+			background-color: green;
+		}
+		.divc:hover{
+			background-color:yellow ;
+		}
+		p {
+			color: blue; /* overwritten by p below */
+		}
+
+		p {
+			color: red;
+			font-size: 40px; /* overwrites above p*/
+		}
+
+		#p1 {
+			color: green; /* id notation: using # for ONLy 1 element*/
+		}
+
+		.p2 {
+			color: purple; /* class notation: using ., for multiple elements;*/
+			font-size: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id = "div1">
+		<p class = "p2">Hello, World! My name is Kevin!</p>
+	</div>
+	<div class = "divc">
+	</div>
+	<div>
+	</div>
+	<p id="p1">Line 1</p>
+	<p class = "p2">Line 2</p>
+	<p style="color:blue;">Line 3</p> 
+	<p> Line 4 </p>
+
+</body>
+</html>
