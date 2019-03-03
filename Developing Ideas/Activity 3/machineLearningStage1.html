@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type = "text/javascript" src = "https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+
+	<title>Activity 3 Stage 1</title>
+</head>
+<body>
+
+
+	<script>
+
+		const app = new Clarifai.App({apiKey: '2df7e9fbb5284537a2d93b95f7959693'});
+
+		app.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://samples.clarifai.com/food.jpg").then(
+
+		    function(response) {
+		      // do something with response
+		      console.log(response);
+		    },
+
+		    function(err) {
+		      // there was an error
+		    }
+	  	);
+
+	</script>
+
+
+</body>
+</html>

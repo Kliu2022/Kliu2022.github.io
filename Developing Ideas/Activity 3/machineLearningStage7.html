@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type = "text/javascript" src = "https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+
+	<title>Activity 3 Stage 7</title>
+
+	<style>
+
+		.wrapper {
+	    
+	        display: flex;
+	        flex-wrap: wrap;
+	        padding: 10px;
+	        background-color: red;
+	        min-width: 420px;
+	        max-width: 1040px;
+	        margin: 0 auto;
+	   
+	      }
+
+	    .input {
+
+	        display: flex;
+	        flex-wrap: wrap;
+	        width: 50%;
+	        height: 600px;
+	        background-color: green;
+	        min-width: 400px;
+	        max-width: 500px;
+	        border: solid;
+	        margin: 0 auto;
+	        align-items: center;
+	        justify-content: center;
+	        
+	    }
+
+	    .output {
+
+	     
+	        width: 50%;
+	        height: 600px;
+	        background-color: blue;
+	        min-width: 400px;
+	        max-width: 500px;
+	        border: solid;
+	        margin: 0 auto;
+
+	    }
+
+	    button {
+	    	height: 30px;
+	    	width: 300px;
+	    }
+
+	</style>
+
+</head>
+<body>
+
+	<div class = "wrapper">
+
+		<div class = "input">
+			<h1> Input Photo </h1>
+			<input type= "text" style = "width: 90%; font-size: 1em;" id="userinput">
+			<button id="enter">Enter</button>
+			<select id = "dropdown" style = "width: 90%">
+			   <option value="ti1">Test Image 1</option>
+			   <option value="ti2">Test Image 2</option>
+			   <option value="ti3">Test Image 3</option>
+			   <option value="ti4">Test Image 4</option>
+			   <option value="ti5">Test Image 5</option>
+			   <option value ="custom" disabled>CUSTOM</option>
+			</select>
+			      
+			<img id = "picture" src="http://farm1.static.flickr.com/228/499181350_b01a280789.jpg" alt="Smiley face" width="300" height=auto>
+
+			<button id="process">Process</button>
+
+		</div>
+
+
+		<div class = "output" style = "text-align: center;">
+			<h1> Predictions </h1>
+			<ul> </ul>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="scriptstage7.js"></script>
+
+
+</body>
+</html>

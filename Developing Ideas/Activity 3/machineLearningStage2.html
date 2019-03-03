@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type = "text/javascript" src = "https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+
+	<title>Activity 3 Stage 2</title>
+
+	<style>
+
+		.wrapper {
+	    
+	        display: flex;
+	        flex-wrap: wrap;
+	        padding: 10px;
+	        background-color: red;
+	        min-width: 420px;
+	        max-width: 1040px;
+	        margin: 0 auto;
+	   
+	      }
+
+	    .input {
+
+	        display: flex;
+	        flex-wrap: wrap;
+	        width: 50%;
+	        height: 600px;
+	        background-color: green;
+	        min-width: 400px;
+	        max-width: 500px;
+	        border: solid;
+	        margin: 0 auto;
+	        
+	    }
+
+	    .output {
+
+	     
+	        width: 50%;
+	        height: 600px;
+	        background-color: blue;
+	        min-width: 400px;
+	        max-width: 500px;
+	        border: solid;
+	        margin: 0 auto;
+
+	    }
+
+	</style>
+
+</head>
+<body>
+
+	<div class = "wrapper">
+		<div class = "input">
+		</div>
+		<div class = "output">
+		</div>
+	</div>
+
+
+	<script>
+
+		const app = new Clarifai.App({apiKey: '2df7e9fbb5284537a2d93b95f7959693'});
+
+		app.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://samples.clarifai.com/food.jpg").then(
+
+		    function(response) {
+		      // do something with response
+		      console.log(response);
+		    },
+
+		    function(err) {
+		      // there was an error
+		    }
+	  	);
+
+	</script>
+
+
+</body>
+</html>
