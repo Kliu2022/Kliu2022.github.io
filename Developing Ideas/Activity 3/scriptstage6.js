@@ -52,7 +52,7 @@ function dropdownChange() {
 
 
 	}
-	pageUpdate()
+		pageUpdate()
 }
 
 function pageUpdate() {

@@ -92,7 +92,7 @@
 
 	        iw = window.innerWidth - 100;
 	        countryData = data.fact[1].Value;
-	        loc = countryData.indexOf("[");
+	        loc = countryData.indexOf("[");//
 	        val = countryData.substring(0,loc);
 	        val = val.replace(/ /g,"");
 	        val = parseInt(val);

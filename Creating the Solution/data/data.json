@@ -1,0 +1,480 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 },
+                 {
+                   "label": "UNREGION",
+                   "display": "UN Region"
+                 },
+                 {
+                   "label": "RESIDENCEAREATYPE",
+                   "display": "Residence Area Type"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "UNREGION": "World",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "39.6"
+              },
+              {
+                "dims": {
+                          "UNREGION": "World",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "38"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern Africa",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "55.2"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern Africa",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "55"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Sub-Saharan Africa",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "35.5"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Sub-Saharan Africa",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "36"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern America and Europe",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "12.0"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern America and Europe",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "12"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern America",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "7.5"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern America",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "7"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Latin America and the Caribbean",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "16.8"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Latin America and the Caribbean",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "16"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Europe",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "14.2"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Europe",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "14"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Central Asia and Southern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "62.8"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Central Asia and Southern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "60"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Central Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "25.5"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Central Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "22"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Southern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "64.2"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Southern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "62"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Eastern Asia and South-eastern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "39.6"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Eastern Asia and South-eastern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "38"
+              },
+              {
+                "dims": {
+                          "UNREGION": "South-eastern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "21.8"
+              },
+              {
+                "dims": {
+                          "UNREGION": "South-eastern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "21"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Eastern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "46.7"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Eastern Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "45"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Western Asia and Northern Africa",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "51.3"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Western Asia and Northern Africa",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "51"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Western Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "47.8"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Western Asia",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "47"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Oceania",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "8.2"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Oceania",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "8"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Oceania excluding Australia and New Zealand",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "11.3"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Oceania excluding Australia and New Zealand",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "11"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Australia and New Zealand",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "7.1"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Australia and New Zealand",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "7"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Caucasus and Central Asia (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "24.9"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Caucasus and Central Asia (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "22"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Eastern Asia (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "49.7"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Eastern Asia (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "48"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern Africa (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "57.0"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Northern Africa (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "57"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Sub-Saharan Africa (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "35.9"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Sub-Saharan Africa (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "37"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Western Asia (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "50.7"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Western Asia (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "50"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Developed regions (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "11.9"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Developed regions (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "11"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Developing regions (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Urban"
+                        },
+                "Value": "45.3"
+              },
+              {
+                "dims": {
+                          "UNREGION": "Developing regions (MDG)",
+                          "GHO": "Concentrations of fine particulate matter (PM2.5)",
+                          "YEAR": "2016",
+                          "RESIDENCEAREATYPE": "Total"
+                        },
+                "Value": "44"
+              }
+      ]
+}
