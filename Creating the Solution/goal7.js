@@ -1,0 +1,90 @@
+var myData = "";
+var dropdown = document.getElementById("dropdown");
+var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data.json'; 
+
+dropdown.addEventListener("change", dropdownChange);
+
+function dropdownChange() {
+    console.log("dropdownChange function called");
+    ddval = dropdown.value; 
+	if (ddval == "ti1") {
+	  image = img1;
+	} else if (ddval == "ti2") {
+	  image = img2;
+	} else if (ddval == "ti3") {
+	  image = img3;
+	} else if (ddval == "ti4") {
+	  image = img4;
+	}
+	else if (ddval == "ti5") {
+	  image = img5;
+
+
+	}
+	pageUpdate()
+}
+
+function pageUpdate() {
+
+	document.getElementById("picture").src = image; 
+}
+
+
+$.getJSON(staticUrl, function(data) {
+
+    iw = window.innerWidth - 200;
+    countryData = data.fact[1].Value;
+    val = parseInt(countryData);
+    largest = val;
+    len = data.fact.length;
+    regions = [0,1,2,4,5,6,8,9,12,14,15];
+
+
+    for (i = 0; i < 11; i = i + 1) {
+
+
+    	k = 2*parseInt(regions[i])+1;
+    	console.log(k);
+        countryData = data.fact[k].Value;
+        val = parseInt(countryData);
+        
+        if (isNaN(val) === false) {
+            largest = Math.max(largest,val);
+        }
+    }
+    
+		col = ["lightblue"];
+
+		
+
+
+    for (i = 0; i < 11; i = i + 1) {
+
+    	k = 2*parseInt(regions[i])+1;
+        countryData = data.fact[k].Value;
+
+		val = countryData; //convert val1 to into int E
+
+		console.log(val);
+        vals = val/largest*iw;
+
+        var div = document.createElement("div");
+        document.getElementById("datasection").appendChild(div);
+        div.setAttribute("id","div"+i);  
+        div.style.width = vals+"px";
+		document.getElementById("div"+i).style.backgroundColor = col[0];
+
+        var p = document.createElement("p");        
+        document.getElementById("div"+i).appendChild(p);                
+        p.setAttribute("id","p"+i);
+        p.setAttribute("font-family", "Raleway, Arial, Helvetica, sans-serif");
+        country = data.fact[k].dims.UNREGION;                
+        p.innerHTML = "<pre>"+country+": "+val+"</pre>";
+
+
+    }
+
+   
+
+  
+});
