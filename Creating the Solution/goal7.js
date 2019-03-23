@@ -2,32 +2,6 @@ var myData = "";
 var dropdown = document.getElementById("dropdown");
 var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data.json'; 
 
-dropdown.addEventListener("change", dropdownChange);
-
-function dropdownChange() {
-    console.log("dropdownChange function called");
-    ddval = dropdown.value; 
-	if (ddval == "ti1") {
-	  image = img1;
-	} else if (ddval == "ti2") {
-	  image = img2;
-	} else if (ddval == "ti3") {
-	  image = img3;
-	} else if (ddval == "ti4") {
-	  image = img4;
-	}
-	else if (ddval == "ti5") {
-	  image = img5;
-
-
-	}
-	pageUpdate()
-}
-
-function pageUpdate() {
-
-	document.getElementById("picture").src = image; 
-}
 
 
 $.getJSON(staticUrl, function(data) {
