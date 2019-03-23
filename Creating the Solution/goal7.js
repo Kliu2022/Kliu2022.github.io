@@ -1,6 +1,7 @@
 var myData = "";
-var dropdown = document.getElementById("dropdown");
-var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data.json'; 
+var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data.json';
+var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data72eia.json'; 
+
 
 
 
