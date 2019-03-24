@@ -1,11 +1,13 @@
-var myData = "";
+
 var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data.json';
-var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data72eia.json'; 
+var staticUrl2 = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data7eia.json'; 
 
 
 
 
 $.getJSON(staticUrl, function(data) {
+
+     console.log(data)//12
 
     iw = window.innerWidth - 200;
     countryData = data.fact[1].Value;
@@ -61,5 +63,25 @@ $.getJSON(staticUrl, function(data) {
 
    
 
+  
+});
+
+$.getJSON(staticUrl2, function(data2) {
+
+    iw = window.innerWidth - 200;
+    
+    console.log(data2)//12
+    var dataSums = [0,0,0,0,0,0,0,0,0,0,0,0];
+//
+    /*for(i = 0; i < 11; i = i+1) 
+    {
+        for(int j = 0; j < 11; j = j + 1)
+        {
+            dataSums[i] += data2[j].
+        }
+    }*/
+
+    
+    
   
 });

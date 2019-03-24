@@ -9,6 +9,10 @@ p {
 	font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
+#title1 {
+  background-color: white;
+}
+
 .topbar{
 
     position: fixed;
