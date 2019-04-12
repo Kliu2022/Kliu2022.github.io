@@ -2,26 +2,6 @@
 var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/data/data.json';
 var staticUrl2 = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data7eia.json'; 
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-
 
 $.getJSON(staticUrl, function(data) {
 
@@ -55,7 +35,7 @@ $.getJSON(staticUrl, function(data) {
 
     for (i = 0; i < 11; i = i + 1) {
 
-    	k = 2*parseInt(regions[i])+1;
+    	k = (2*parseInt(regions[i]))+1;
         countryData = data.fact[k].Value;
 
 		val = countryData; //convert val1 to into int E
