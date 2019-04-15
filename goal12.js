@@ -27,9 +27,6 @@ $.getJSON(staticUrl2, function(data) {
         food.push(data[i].Item)
     }
 
-    console.log(loss[33]);
-    console.log(prod[33]);
-    console.log(food[33]);
     largest = loss[0]/prod[0];
 
     for(i = 0; i < len; i = i + 1){
@@ -39,7 +36,6 @@ $.getJSON(staticUrl2, function(data) {
     }
 
     iw = window.innerWidth-300
-    console.log(largest);
 
 
     for(i = 0; i < len; i = i + 1){

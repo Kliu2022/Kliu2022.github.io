@@ -1,7 +1,4 @@
-
 var staticUrl = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/data/data.json';
-var staticUrl2 = 'https://raw.githubusercontent.com/Kliu2022/Kliu2022.github.io/master/Creating%20the%20Solution/data/data7eia.json'; 
-
 
 $.getJSON(staticUrl, function(data) {
 

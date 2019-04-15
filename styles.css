@@ -1,7 +1,15 @@
+/* **********************  General Styling *************************************************************************************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	  font-family: Roboto, Arial, Helvetica, sans-serif;
 	  font-size: 16px;
-    background-image: linear-gradient(to bottom right, rgb(254, 239, 189),rgb(200, 251, 210) ); 
+    color: #191919;
+    background-image: linear-gradient(to bottom right, rgb(254, 239, 189),rgb(200, 251, 210)); 
 
 	}
 
@@ -10,6 +18,65 @@ p {
   font-size: 17px;
 }
 
+.nocenter{
+  text-align: left;
+}
+
+.centeredtext{
+  text-align: center;
+}
+
+h1{
+  font-size: 43px;
+  text-align: center;
+}
+h2{
+  font-size: 30px; 
+  text-align: center;
+}
+h3{
+  font-size: 20px;
+}
+
+hr{
+  border: 1px solid #000;
+}
+
+.shortline{
+  padding-bottom: 9px;
+}
+
+.shortline hr{
+  width: 69px;
+  border: 1px solid #666;
+}
+
+.majorsection{
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.contentNoTop{
+
+  margin-left: 150px;
+  margin-right: 150px;
+
+
+
+}
+
+.floatRight{
+  float: right;
+  padding: 9px;
+}
+
+.floatLeft{
+  float: left;
+  padding-right: 15px;
+}
+
+/* **********************  Topbar *****************************************************************/
+
 
 .topbar{
 
@@ -17,87 +84,8 @@ p {
     top: 0;
     left: 0;
     z-index: 10;
-    height: 80px;
-
-}a
-
-h1{
-	font-size: 50px;
-}
-h2{
-  font-size: 30px; 
-}
-h3{
-  font-size: 20px;
-}
-
-.content{
-
-	margin-top:100px;
-      margin-left: 150px;
-    margin-right: 150px;
 
 }
-
-.flip-box {
-background-color: transparent;
-width: 220px;
-height: 220px;
-perspective: 1000px;
-}
-
-.flip-box-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-box-front {
-background-color: dodgerblue;
-color: black;
-
-}
-
-.fbtext{
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.flip-box-back {
-background-color: dodgerblue;
-color: white;
-transform: rotateY(180deg);
-}
-
-.flex-container {
-display: flex;
-flex-wrap: wrap; 
-background-color: lightblue;
-justify-content: center;
-}
-
-.flex-container > div {
-background-color: #f1f1f1;
-margin: 8px; 
-padding: 9px;
-font-size: 14px;
-}
-
-
 
 ul {
   list-style-type: none;
@@ -116,10 +104,6 @@ li {
   padding: 0;
 }
 
-.tbimg{
-  margin-left: 19px;
-}
-
 li a {
   display: block;
   color: black;
@@ -130,6 +114,210 @@ li a {
   line-height: 50px;
   margin-left: 10px;
 }
+
+.tbimg{
+  margin-left: 19px;
+}
+
+li a:hover:not(.active) {
+  background-color: #DDD;
+}
+
+/* **********************  Intro Section on the Three Pages *******************************************************/
+
+.infotextGoal12, .infotextGoal7, .infotextLink{
+  font-size: 140px;
+  color: #FFF;
+}
+
+.infocaptionGoal7, .infocaptionGoal12, .infocaptionLink{
+  font-size: 24px;
+  color: #FFF;
+}
+
+
+
+.LandingPageBackground{
+  background-image: url("images/sustain1.jpg");
+  background-color: rgba(0, 0, 0,0.22);
+  background-blend-mode: color;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.introGoal7, .introGoal12, .introLink{
+  margin-top: 69px;
+  background-size: cover;
+  margin-left: 0px; 
+  margin-right:0px;
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+
+
+}
+
+.introGoal12{
+  
+  background-image: url("images/food-waste.jpg");
+  background-color: rgba(0, 0, 0,0.46);
+  
+}
+
+
+.introGoal7{
+  background-image: url("images/train.jpg");
+  background-color: rgba(0, 0, 0,0.46);
+}
+
+.introLink{
+  background-image: url("images/lofoten.jpg");
+  background-color: rgba(0, 0, 0,0.10);
+}
+
+/* **********************  Flip Boxes (flip-box is on Goal7 and Goal12, flip-box-round on index.html) ****************************/
+
+.flip-box {
+  background-color: transparent;
+  width: 220px;
+  height: 220px;
+  perspective: 1000px;
+}
+
+.flip-box-food {
+  background-color: transparent;
+  width: 450px;
+  height: 220px;
+  perspective: 1000px;
+}
+
+.flip-box-round{
+  background-color: transparent;
+  width: 240px;
+  height: 240px;
+  perspective: 1000px;
+  border-radius: 240px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner, .flip-box-round:hover .flip-box-inner, .flip-box-food:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box .flip-box-front, .flip-box .flip-box-back, .flip-box-round .flip-box-front, .flip-box-round .flip-box-back, .flip-box-food .flip-box-front, .flip-box-food .flip-box-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box .flip-box-front {
+  background-color: #62b9d6;
+  color: black;
+  border-radius: 9px;
+
+}
+
+.flip-box .flip-box-back {
+    border-radius: 9px;
+    background-color: #62b9d6;
+    color: black;
+}
+
+.flip-box-food .flip-box-front, .flip-box-food .flip-box-back{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.flip-box-round .flip-box-front {
+
+  background-color: #62b9d6;
+  color: black;
+}
+
+.flip-box-back-link-title {
+  font-size: 25px;
+}
+.flip-box-back-link-text {
+  font-size: 18px;
+}
+
+.flip-box-round a{
+    text-decoration: none;
+}
+
+.fbtext{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.flip-box-back{
+
+  transform: rotateY(180deg);
+}
+
+.flip-box-back-link{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  color: black;
+  text-decoration: none;
+  padding-top: 40px;
+
+}
+
+.flip-box-food .flip-box-back .flip-box-back-text{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.flip-box-round .flip-box-back{
+  background-color: #62b9d6;
+  color: black;
+}
+
+.flex-container, .flex-container-nb{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+
+.flex-container{
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.flex-container > div, .flex-container-nb > div {
+  background-color: #f1f1f1;
+  margin: 8px; 
+  padding: 10px;
+  font-size: 14px;
+}
+
+.flex-container > div{
+  border-radius: 9px;
+}
+
+.flex-container-nb {
+  border-radius: 100%;
+}
+
+
+.flip-box-round .flip-box-front, .flip-box-round .flip-box-back{
+  border-radius: 100%;
+
+}
+
+/************************** Rows and columns. Used for cards and intro sections. ****************************/
 
 .row {
   display: flex;
@@ -174,56 +362,29 @@ li a {
 
 }
 
-.infotext{
-  font-size: 140px;
-  color: darkblue;
-}
-
-.infotextsmall{
-  font-size: 70px;
-  color: darkblue;
-}
-
-.infocaption{
-  font-size: 24px;
-  color: darkblue;
-
-}
-
-li a:hover:not(.active) {
-  background-color: #655;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
-.floatRight{
-	float: right;
-	padding: 9px;
-}
-
-.floatLeft{
-  float: left;
-  padding-right: 15px;
-}
-
-.fbfront{
-  color: red;
-  width: 300px;
-  height: 300px;
-}
+/************************** Footer section. *******************************************************/
 
 .addr{
-  background-color: white;
+  background-color: #85afbc;
   padding: 2px;
-  border-radius: 16px;
+  display: block;
+  border-top: solid;
+  border-width: 1px;
+
 }
 
 .addrc{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
+
+.addr .addrc .row .column p {
+  font-size: 15px;
+}
+
+
+/************************** Accordion section on Goal 7. ******************************************************/
+
 
 .accordion {
   background-color: #eee;
@@ -232,10 +393,13 @@ li a:hover:not(.active) {
   padding: 18px;
   width: 100%;
   text-align: left;
-  border: none;
   outline: none;
   transition: 0.4s;
   font-size: 24px;
+}
+
+.active {
+  background-color: #4CAF50;
 }
 
 .active, .accordion:hover {
