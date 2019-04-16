@@ -126,12 +126,12 @@ li a:hover:not(.active) {
 /* **********************  Intro Section on the Three Pages *******************************************************/
 
 .infotextGoal12, .infotextGoal7, .infotextLink{
-  font-size: 140px;
+  font-size: 10vw;
   color: #FFF;
 }
 
 .infocaptionGoal7, .infocaptionGoal12, .infocaptionLink{
-  font-size: 24px;
+  font-size: 1.65vw;
   color: #FFF;
 }
 
